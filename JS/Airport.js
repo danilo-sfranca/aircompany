@@ -1,7 +1,7 @@
 const PassengerPlane = require('./Planes/PassengerPlane');
 const MilitaryPlane = require('./Planes/MilitaryPlane');
-const MilitaryType = require('./models/militaryType');
-const experimentalPlane = require('./Planes/experimentalPlane');
+const MilitaryType = require('./models/MilitaryType');
+const ExperimentalPlane = require('./Planes/ExperimentalPlane');
 
 class Airport {
 
@@ -76,7 +76,7 @@ class Airport {
     getExperimentalPlanes() {
         let experimentalPlanes  = [];
         this.planes.forEach(plane => {
-            if (plane instanceof experimentalPlane) {//if
+            if (plane instanceof ExperimentalPlane) {//if
                 experimentalPlanes.push(plane);
             }
         });

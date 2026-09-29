@@ -1,5 +1,4 @@
 class Plane {
-
     constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity) {
         this.model = model;
         this.maxSpeed = maxSpeed;
@@ -15,13 +14,24 @@ class Plane {
         return this.maxSpeed;
     }
 
+    getMaxSpeed() {
+        return this.maxSpeed;
+    }
+
     Get_Max_Flight_Distance() {
         return this.maxFlightDistance;
     }
 
+    getMaxFlightDistance() {
+        return this.maxFlightDistance;
+    }
+
     getMinLoadCapacity() {
-     let result = this.maxLoadCapacity;
-     return result;
+        return this.maxLoadCapacity;
+    }
+
+    getMaxLoadCapacity() {
+        return this.maxLoadCapacity;
     }
 }
 
